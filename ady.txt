@@ -1,0 +1,44 @@
+app.post =express();
+app.use(express.json());
+
+app.post("/products",(req,res)=>{
+  const {
+    body: { name, price },
+  } = req;
+
+  db.products = { nama, price, };
+  db.products = db.products.concat(newProduct);
+});
+app.put{"/products/:productId,(req,res)=>{
+
+  const {
+    params:{product}
+    body:{name,price}
+  }
+  const product = db.prodyctq[productId]
+
+  if(!product){
+    res.status(404).send({error:"no such product});
+    return;
+  }
+  const.updateProduct = {name, price};
+  db.products[productId]
+
+}}
+
+app.get("/products", '(req,res)=>{
+ res.send(db.products);
+});
+
+app.get("/products/:productId, (req,res)=>{
+
+const {
+  product = [products];
+body: { name, price };
+}=req;
+} 
+const product = db.products[productId];
+
+app.put("/products/productId",(req,res)=>{
+
+});
